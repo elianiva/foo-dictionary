@@ -22,12 +22,6 @@ Console.CancelKeyPress += delegate
     connection.Close();
     Environment.Exit(0);
 };
-// close the database connection when we quit the app using Ctrl+C
-Console.CancelKeyPress += delegate
-{
-    connection.Close();
-    Environment.Exit(0);
-};
 
 // ask the user for a word to look up until they quit the app
 while (true)
